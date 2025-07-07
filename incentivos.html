@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Incentivos Comerciais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <span class="logo">Incentivos Comerciais</span>
+    <ul>
+      <li>Visão Geral</li>
+      <li>Comparativo</li>
+      <li>Logout</li>
+    </ul>
+  </nav>
+  <main>
+    <section class="dashboard">
+      <h1>Visão de Incentivos por Segmento</h1>
+      <div class="filters">
+        <select id="ano-filter">
+          <option value="">Ano</option>
+          <option>2025</option>
+          <option>2024</option>
+        </select>
+        <select id="segmento-filter">
+          <option value="">Segmento</option>
+          <option>Alianças e Parcerias</option>
+          <option>Top Accounts</option>
+          <option>Itaú</option>
+          <option>Mercado Público</option>
+          <option>Middle</option>
+          <option>Pequenas Empresas</option>
+          <option>Produtos Especializados</option>
+          <option>RB</option>
+        </select>
+      </div>
+      <div class="summary-cards" id="summary-cards">
+        <!-- Cards preenchidos por JS -->
+      </div>
+      <div class="charts-row">
+        <div class="chart-card">
+          <h3>Comparativo Volume x Incentivo</h3>
+          <canvas id="volumeIncentivoChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Status dos Incentivos</h3>
+          <canvas id="statusIncentivoChart"></canvas>
+        </div>
+      </div>
+      <div class="table-card">
+        <h3>Detalhamento por Segmento</h3>
+        <table id="tabela-incentivos">
+          <thead>
+            <tr>
+              <th>Segmento</th>
+              <th>Faturamento</th>
+              <th>Incentivo Usado</th>
+              <th>Incentivo Restante</th>
+              <th>Pendentes</th>
+              <th>Ativos</th>
+              <th>Inativos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Preenchido via JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="incentivos.js"></script>
+</body>
+</html>
