@@ -36,7 +36,7 @@ const incentivosPorSegmento = [
     ativos: 3,
     inativos: 1
   }
-  // ...adicione os demais segmentos
+  // ...adicione os demais segmentos se quiser
 ];
 
 // Função para formatar valores monetários
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTabela();
   renderGraficos();
 
-  // Filtros (mock, não filtra de verdade)
+  // Filtros (mock, não filtra de verdade ainda)
   document.getElementById('ano-filter').addEventListener('change', function() {
     // Aqui você pode filtrar os dados da API conforme o ano
   });
